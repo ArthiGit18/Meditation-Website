@@ -1,0 +1,69 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: #FDCEDF; // Light background for a clean look
+
+
+
+
+
+    .image-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            background: url('../public/assets/grudge/3.png') no-repeat center/cover;
+            // border-radius: 50%;
+            opacity: 0.5;
+            top: 50%;
+            left: 52%;
+            transform: translate(-50%, -50%);
+            // z-index: -1;
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+    button {
+        background: #ff7f50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background: #ff5733;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+
+        li {
+            font-size: 1rem;
+            color: #444;
+            margin: 5px 0;
+        }
+
+    }
+}
