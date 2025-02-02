@@ -4,11 +4,7 @@
     align-items: center;
     text-align: center;
     height: 100vh;
-    background: #FDCEDF; // Light background for a clean look
-
-
-
-
+    background: rgb(248, 232, 238); // Light background for a clean look
 
     .image-wrapper {
         position: relative;
@@ -67,3 +63,191 @@
 
     }
 }
+
+.face-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, rgba(248, 232, 238, 1) 0%, rgba(242, 190, 209, 1) 100%);
+    
+    
+    .face-slider {
+        margin: 50px;
+        padding: 20px 0;
+    }
+
+    .slick-list {
+        margin: 0 -10px; /* Ensures even spacing */
+    }
+
+    .slick-slide {
+        padding: 0 10px; /* Space between slides */
+    }
+
+    .card_faceyoga {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        text-align: center;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+  
+      img {
+        width: 100%;
+        max-width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+  
+      h3 {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        color: #222;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #666;
+        margin-top: 8px;
+      }
+    }
+  
+    /* Fixed Slick Slider Navigation */
+    .slick-prev,
+    .slick-next {
+      font-size: 30px;
+      background: #F2BED1;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      z-index: 10;
+      
+    }
+  
+    .slick-prev {
+      left: -70px; /* Move left arrow outside */
+    }
+  
+    .slick-next {
+      right: -70px; /* Move right arrow outside */
+    }
+  
+    .slick-prev:hover,
+    .slick-next:hover {
+      background: green;
+    }
+  
+    .slick-dots li button:before {
+      font-size: 12px;
+      color: #888;
+    }
+  
+    .slick-dots li.slick-active button:before {
+      color: #222;
+    }
+  }
+  
+  
+
+.benefits-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, rgba(242, 242, 242, 1) 0%, rgba(220, 220, 220, 1) 100%);
+    
+    .grid_benefits {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .card_benefit {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        text-align: center;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: #222;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 8px;
+        }
+    }
+}
+
+.yoga-tips-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, rgba(248, 232, 238, 1) 0%, rgba(242, 190, 209, 1) 100%);
+  
+    .yoga-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+      justify-content: center;
+    }
+  
+    .tip-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      img {
+        width: 100%;
+        max-width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        display: block;
+        margin: 0 auto 15px;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #444;
+      }
+    }
+  }
+  
